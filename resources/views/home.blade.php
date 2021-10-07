@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{url('/artist/'.$artist[0]['id'].'/albums')}}">Albums</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{route('album.index.artist',[$artist[0]['id']])}}">Albums</a></div>
                         </div>
                     </div>
                 </div>

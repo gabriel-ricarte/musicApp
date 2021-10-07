@@ -54,6 +54,6 @@ class LoginController extends Controller
                         ->withSuccess('Signed in');
         }
 
-        return redirect("login")->withSuccess('Login details are not valid');
+        return redirect("login")->withErrors("Sorry, we couldn't find an account with this username. Please check you're using the right username and try again.");
     }
 }
